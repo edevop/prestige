@@ -24,8 +24,14 @@
     <div class="app__wrapper" id="app__wrapper">
 
         <div class="fixed-social-btn-right">
-
+            <i class="telegram-icon"></i>
         </div>
+
+        <script type="text/javascript">
+            document.querySelectorAll('.fixed-social-btn-right').addEventListener('click', function() {
+                window.location.replace('http://wwww.cryptoprestige.io');
+            });
+        </script>
 
         <header class="hDr_" id="app-header">
             <nav class="nav-type-1 stick">
