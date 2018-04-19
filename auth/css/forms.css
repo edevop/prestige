@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+:root {
+    --bg-color: #f0f0f0;
+    --footer-height: 394px;
+}
+
+html {
+    font: 500 14px/150% 'Hind Guntur', sans-serif;
+    letter-spacing: .5px;
+    user-select: none;
+}
+
+body {
+    margin: 0; padding: 0;
+    background: var(--bg-color);
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.formalizer {
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/**
+* FORM BODY ENVIRONMENT
+*/
+#form-body--env {
+    width : 100%;
+    min-height: calc(100% - var(--footer-height));
+    display : block;
+    position: relative;
+}
+
+/**
+* # HEADER TABLE
+*/
+#header-tab {
+    width : 100%;
+    height: 65px;
+    background-color: #081221;
+    background-image: -webkit-linear-gradient(#081221, #081231 10px);
+    background-image: linear-gradient(#081221, #081231 10px);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+/**
+* PATH SESSION PANEL
+*/
+#path-session-panel {
+    width  : 100%;
+    height : auto;
+    padding: 64px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#path-session-panel h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    width: 710px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.path {
+    display: inline-block;
+    width: 180px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    position: relative;
+    z-index: 20;
+}
+
+li.path::after {
+    content: "";
+    width: 86px;
+    height: 5px;
+    border: 3px solid #ddd;
+    position: absolute;
+    right: -87px;
+    top: calc(50% - 1.5px);
+    z-index: 1;
+}
+
+li.path:last-of-type::after {
+    content: none;
+}
+
+li.path:nth-child(1) {
+    background: #0066ff;
+    color: #fff;
+    border: 1px solid #0066ff;
+}
+
+/**
+* MORE ABOUT
+*/
+.more-about {
+    width: 710px;
+    height: auto;
+    padding: 16px 0;
+    margin: 0 auto;
+}
+
+.important-about {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 8px;
+    border: 1px solid orange;
+    background: #F0E68C;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.reg-cap {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+}
+
+/**
+* PARALLEL PANEL
+*/
+#parallel-panel {
+    width : 710px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/**
+* FORM PANEL
+*/
+#form-panel {
+    padding: 16px 8px;
+}
+
+/**
+* GROUP INPUT
+*/
+.input-group {
+    width: 100%;
+    height: auto;
+    padding: 8px 0;
+}
+
+.input-group input, select {
+    width: 100%;
+    height: 36px;
+    border-radius: 2px;
+    border: 0;
+    border: 1px solid #aaa;
+    outline: none;
+    padding: 0 5px;
+}
+
+input:focus {
+    border: 1px solid #0066ff;
+}
+
+/**
+* ABOUT
+*/
+.about {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+
+/**
+* INPUT ACTION
+*/
+.input-action {
+    width: 100%;
+    height: auto;
+    padding: 32px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-action button {
+    background-color: #0066ff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: 500 14px/20px Roboto,sans-serif;
+    height: 36px;
+    margin: 0;
+    width: 100%;
+    min-width: 36px;
+    outline: 0;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    transition: background-color .2s,box-shadow .2s;
+    vertical-align: middle;
+    white-space: nowrap;
+    box-shadow: 0 19px 28px rgba(0,0,0,0.05), 0 8px 12px rgba(0,0,0,0.12);
+}
+
+.input-action button:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/**
+* FOOTER TABLE
+*/
+#footer-tab {
+    background-color: #081221;
+    background-image: -webkit-linear-gradient(#081221, #081231 10px);
+    background-image: linear-gradient(#081221, #081231 10px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    color: #43575e;
+    font-size: 12px;
+    margin: 0 auto;
+    position: relative;
+    height: var(--footer-height);
+}
+
+.val-message {
+    width: 100%;
+    text-align: center;
+    padding: 92px 0;
+}
+
+#aside-info {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    font-size: 13px;
+}
+
+/**
+* PLAN CARDS
+*/
+.business_plans {
+    width: 100%;
+    height: auto;
+}
+
+.card_plan_env {
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    padding: 16px 0;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+}
+
+.card_plan {
+    height: 300px;
+    background: tomato;
+    border-top-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    overflow: hidden;
+}
+
+.card_price {
+    width: 100%;
+    height: 190px;
+    background: #333;
+}
+
+@media screen and ( max-width: 720px ) {
+    .card_plan_env {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+/**
+* PAYMENTS
+*/
+.table {
+    width : 920px;
+    height: auto;
+    min-height: 692px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.table-menu {
+    width : inherit;
+    height: auto;
+    display: table;
+}
+
+.table-item {
+    width : 100%;
+    height: 44px;
+    display: block;
+    border-radius: 4px;
+}
+
+.table-item:nth-child(even) {
+    background: #ddd;
+}
+
+.table-item ul {
+    width : 100%;
+    height: auto;
+}
+
+.table-item ul li {
+    height: 44px;
+    line-height: 44px;
+    text-align : left;
+}
+
+.title-bar ul > li {
+    padding: 0 8px;
+}
