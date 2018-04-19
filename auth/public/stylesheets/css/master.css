@@ -28,7 +28,18 @@ body {
   right: 0;
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
   z-index: 95; }
+
+  .telegram-icon::after {
+      margin-top: 8px;
+      content: url("../../../resources/telegram.svg");
+      display: inline-block;
+      fill: #fff;
+  }
 
 .static-converter {
   width: 1200px;

@@ -1,7 +1,14 @@
 
 
-        <footer class="footer-pad" "app-footer">
+        <footer class="footer-pad" id="app-footer">
+            <ul class="">
+                <li class="">
+                    &copy; 2018 Prestige high tech finance corp.
+                </li>
+                <li class="">
 
+                </li>
+            </ul>
         </footer>
 
     </div>

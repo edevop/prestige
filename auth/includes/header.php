@@ -24,7 +24,7 @@
     <div class="app__wrapper" id="app__wrapper">
 
         <div class="fixed-social-btn-right">
-
+            <i class="telegram-icon"></i>
         </div>
 
         <header class="hDr_" id="app-header">
