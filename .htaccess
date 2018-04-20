@@ -1,2 +1,2 @@
-Redirect 301 /prestige-htf.com /https://www.prestige-htf.com
-Redirect 301 /http://www.prestige-htf.com /https://www.prestige-htf.com
+Redirect 301 /prestige-htf.com/ https://www.prestige-htf.com
+Redirect 301 /http://www.prestige-htf.com/ https://www.prestige-htf.com
