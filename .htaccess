@@ -1,2 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^prestige-htf.com [NC, OR]
+RewriteCond %{HTTP_HOST} ^www.prestige-htf.com [NC]
+RewriteRule ^(.*)$ https://prestige-htf.com/$1 [L, R=301, NC]
+
 Redirect 301 /prestige-htf.com /https://www.prestige-htf.com
 Redirect 301 /http://www.prestige-htf.com /https://www.prestige-htf.com
